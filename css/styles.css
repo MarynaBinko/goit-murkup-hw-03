@@ -1,27 +1,86 @@
-
-body{
-font-family: 'Roboto', sans-serif;
-color: #434455;
-background-color: #FFF;
-text-decoration: none;
+/* Reset Styles */
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-a{
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding-left: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFF;
+    text-decoration: none;
+}
+
+a {
     color: currentColor;
     text-decoration: inherit;
 }
 
-button{
+button {
     font-family: inherit;
     color: currentColor;
     cursor: pointer;
 }
 
-ul, li {
-     list-style-type: none;
+ul,
+li {
+    list-style-type: none;
 }
 
+
+
+
+.block-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* common styles */
+.container {
+        max-width: 1158px;
+       padding: 0 15px 0 15 px;
+        margin: 0 auto;
+      }
+
+
+
 /* Header */
+.header{
+    border bottom: 1px solid #E7E9FC;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    width: 1158px
+}
+
+.logo-header{
+    margin-right: 76px;
+}
+
+.nav-list {
+    width: 261px;
+    margin-right: 832px;
+    margin-left: 347;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
 .logo{ 
     text-decoration: none;
     color:  #4D5AE5;
@@ -32,6 +91,7 @@ ul, li {
         line-height: 1.17;       
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        
 }
 
 .logo-header{
@@ -43,7 +103,9 @@ ul, li {
         line-height: 1.17;       
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        
 }
+
 
 .nav:hover, .nav:focus{
 color: #404BBF;
@@ -56,8 +118,12 @@ color: #404BBF;
             font-style: normal;
             font-weight: 500;
             line-height: 1.5;         
-            letter-spacing: 0.02em;
-    }
+            letter-spacing: 0.02em; 
+                                             
+            }
+   
+
+
 
 
     .address{
@@ -78,6 +144,10 @@ color: #404BBF;
         letter-spacing: 0.02em;
 }
 
+
+
+
+
 /* Hero section */
 .hero-section {
     background: #2E2F42;
@@ -91,6 +161,11 @@ color: #404BBF;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 48px;
+    padding-top: 188px;
 }
 
 .button:hover, button:focus{
@@ -106,7 +181,15 @@ color: #404BBF;
     font-style: normal;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    }
+    
+      }
+
+      .button-container {
+width: 169px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 188px;
+      }
        
                     
           
@@ -225,6 +308,7 @@ letter-spacing: 0.02em;
             font-weight: 400;
             line-height: 1.5;           
             letter-spacing: 0.02em;
+            width: 264px;
         }
 
 
